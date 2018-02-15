@@ -417,6 +417,7 @@ func main() {
 	appmanager.DEFAULT_PARTITION = (*bigIPPartitions)[0]
   appmanager.RegisterBigIPSchemaTypes()
 
+	log.Infof("KJR - BIG-IP 1.3 official")
 	if _, isSet := os.LookupEnv("SCALE_PERF_ENABLE"); isSet {
 		now := time.Now()
 		log.Infof("SCALE_PERF: Started controller at: %d", now.Unix())
